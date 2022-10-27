@@ -1,0 +1,1 @@
+{"version":3,"file":"styles/26a2948daf734760689a.css","mappings":"AACA,KACE,kBAAF,CAEA,IACE,kvjJAAF,CCLA,KACE,cACF","sources":["webpack:///./src/asset/style.less","webpack:///./src/asset/base.less"],"sourcesContent":["@color: rgb(194, 207, 235);\nbody {\n  background: @color\n}\n.bg {\n  background: url(./bb.png)\n}","html {\n  fone-size: 20px\n}"],"names":[],"sourceRoot":""}
