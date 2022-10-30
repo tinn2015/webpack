@@ -34,3 +34,17 @@ document.body.appendChild(block)
 const img3 = document.createElement('img')
 img3.src = dd
 document.body.appendChild(img3)
+
+/**
+ * 懒加载， 按需加载测试
+ */
+const addModule = document.createElement('button')
+addModule.textContent = '懒加载，添加模块'
+addModule.addEventListener('click', () => {
+  // 注意这里的魔法注释， 可以指定打包后的模块名， 以及是否预加载
+  import(/*webpackChunkName: 'asyncModule', webpackPrefetch: true */'./asyncModule.js').then(res => {
+    console.log('get async moudle:', res)
+    res.log()
+  })
+})
+document.body.appendChild(addModule)
