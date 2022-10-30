@@ -1,1 +1,0 @@
-{"version":3,"file":"asyncModule.bundle.js","mappings":";;;;;;;;;;;;;AAAO,SAASA,GAAG,GAAI;EACrBC,OAAO,CAACD,GAAG,CAAC,mBAAmB,CAAC;AAClC","sources":["webpack:///./src/asyncModule.js"],"sourcesContent":["export function log () {\r\n  console.log('i am async moudle')\r\n}"],"names":["log","console"],"sourceRoot":""}

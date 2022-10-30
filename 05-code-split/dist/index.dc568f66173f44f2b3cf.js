@@ -79,7 +79,7 @@ var addModule = document.createElement('button');
 addModule.textContent = '懒加载，添加模块';
 addModule.addEventListener('click', function () {
   // 注意这里的魔法注释， 可以指定打包后的模块名， 以及是否预加载
-  __webpack_require__.e(/*! import() | asyncModule */ "asyncModule").then(__webpack_require__.bind(__webpack_require__, /*! ./asyncModule */ "./src/asyncModule.js")).then(function (res) {
+  __webpack_require__.e(/*! import() | asyncModule */ "asyncModule").then(__webpack_require__.bind(__webpack_require__, /*! ./asyncModule.js */ "./src/asyncModule.js")).then(function (res) {
     console.log('get async moudle:', res);
     res.log();
   });
@@ -294,7 +294,7 @@ module.exports = __webpack_require__.p + "assets/c34cfee09be0e2022e7d.svg";
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "" + chunkId + ".bundle.js";
+/******/ 			return "" + chunkId + "." + "9d89e7f2841252bb8040" + ".js";
 /******/ 		};
 /******/ 	})();
 /******/ 	
@@ -525,9 +525,9 @@ module.exports = __webpack_require__.p + "assets/c34cfee09be0e2022e7d.svg";
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors-node_modules_lodash_lodash_js"], () => (__webpack_require__("./src/index.js")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors"], () => (__webpack_require__("./src/index.js")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=index.bundle.js.map
+//# sourceMappingURL=index.dc568f66173f44f2b3cf.js.map

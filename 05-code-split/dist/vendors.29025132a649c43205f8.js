@@ -1,4 +1,4 @@
-(self["webpackChunk"] = self["webpackChunk"] || []).push([["vendors-node_modules_lodash_lodash_js"],{
+(self["webpackChunk"] = self["webpackChunk"] || []).push([["vendors"],{
 
 /***/ "../node_modules/lodash/lodash.js":
 /*!****************************************!*\
@@ -17213,4 +17213,4 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 /***/ })
 
 }]);
-//# sourceMappingURL=vendors-node_modules_lodash_lodash_js.bundle.js.map
+//# sourceMappingURL=vendors.29025132a649c43205f8.js.map

@@ -20,7 +20,7 @@ module.exports = {
     main: './src/main.js'
   }, 
   output: {                // 输出
-    filename: '[name].bundle.js',
+    filename: '[name].[contenthash].js',
     path: path.resolve(__dirname, './dist'),
     clean: true,         // 清除dist目录
     assetModuleFilename: 'assets/[contenthash][ext]' // 静态资源输出目录
@@ -94,7 +94,19 @@ module.exports = {
        * 两个模块都加载了loadsh
        * 通过chunks: all 设置，可以将公共模块loadsh抽离， 这个是把所有公共模块抽离到一个文件中
        */
-      chunks: 'all'
+      // chunks: 'all'
+
+      /**
+       * 抽离node_modules中的所有模块到一个包内.
+       * 因为node_modules中的依赖更新不频繁，所以如此操作可以更充分利用浏览器缓存
+       */
+      cacheGroups: {
+        vendor: {
+          test: /[\\/]node_modules[\\/]/,
+          name: 'vendors',
+          chunks: 'all'
+        }
+      }
     }
   },
   devServer: {
