@@ -1,0 +1,1 @@
+{"version":3,"file":"styles/f9755f2da82ce0938452.css","mappings":";;;AACA;EACE;AAAF;AAEA;EACE;AAAF;;;;;ACLA;EACE;AACF","sources":["webpack:///./src/asset/style.less","webpack:///./src/asset/base.less"],"sourcesContent":["@color: rgb(194, 207, 235);\nbody {\n  background: @color\n}\n.bg {\n  background: url(./bb.png)\n}","html {\n  fone-size: 20px\n}"],"names":[],"sourceRoot":""}
